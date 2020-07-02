@@ -102,7 +102,19 @@ body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
-
+  body#bg-img {
+    background: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-img:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: rgba(68, 68, 68, 0.9); }
 
 h1,
 h2,
@@ -112,7 +124,7 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 5rem; }
+    font-size: 6rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
@@ -142,53 +154,41 @@ main {
       main .icons a:hover {
         color: #eece1a;
         transition: all 0.5s ease-out; }
-  main#home {
-    overflow: hidden; }
-    main#home .image {
-      display:flex;
-      align-items:center;
-      justify-content:center;    }
-  main#home .image img {
-    margin-top: 0;
-    padding: 0 5px;
-  }   
-    main#home h1 {
-      margin-top: 10px; }
-  
-  main#home h2{
-    margin-bottom: 60px; } 
-  main#about {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-areas: 'heading  heading heading' 'bio-image bio bio';
-    grid-template-columns: repeat(3, 1fr); 
-  }
-  
-main#about .heading {
-    grid-area: heading; }
+        main#home {
+          overflow: hidden; }
+          main#home .image {
+            display:flex;
+            align-items:center;
+            justify-content:center;    }
+        main#home .image img {
+          margin-top: 0;
+          padding: 0 5px;
+        } 
+        main#home h1 {
+          margin-top: 20px;
+        text-align: center; }
+      
+      main#home h2{
+        text-align: center;
+        margin-bottom: 60px; }
 
-main#about .bio-image {
+main#about {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'bioimage heading heading' 'bio bio bio';
+  grid-template-columns: repeat(3, 1fr); }
+  main#about .bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
     border: #eece1a 3px solid; }
-main#about .bio {
+  main#about .bio {
     grid-area: bio;
     font-size: 1.5rem; }
-main#about .job-1 {
-    grid-area: job1; }
-main#about .job-2 {
-    grid-area: job2; }
-
-main#about .job {
-    background: #515151;
-    padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
-
-main#about  .bioimage h4 {
-  margin-top: 0;
-  margin-left: 65px;
-}  
+    main#about .heading {
+    grid-area: heading; }
+  
+   
 
 .projects {
   display: grid;
@@ -201,22 +201,19 @@ main#about  .bioimage h4 {
       opacity: 0.5;
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
-
-.projecto {
-  max-width: 1200px;
-  margin: 30px auto;
-  width: 100%; 
-  display: grid;
-  /* Define Auto Row size */
-  /*Define our columns */
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
-  grid-gap: 3em; }
   
-  .projecto .job {
-    border-left: #eece1a 2px solid;
-    padding-left: 5px;
-    background: #515151;
-  }
+      .projecto {
+        max-width: 1200px;
+        margin: 30px auto;
+        width: 100%; 
+        display: grid;
+        /* Define Auto Row size */
+        /*Define our columns */
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+        grid-gap: 3em; }
+     .projecto .job {
+      background: #515151;
+     }
 
 .boxes {
   display: flex;
@@ -262,17 +259,12 @@ main#about  .bioimage h4 {
   height: 60px; }
 
 @media screen and (min-width: 1171px) {
-    .projects {
+  .projects {
     grid-template-columns: repeat(4, 1fr); } }
-@media screen and (min-width: 1171px) {
-   
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
-  
   .projects {
-    grid-template-columns: repeat(2, 1fr); } 
-}
-   
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -290,33 +282,23 @@ main#about  .bioimage h4 {
     div.menu-branding.show {
       transform: translate3d(0, 0, 0); }
   .menu-nav {
-    height: 65vh;
+    height: 75vh;
     transform: translate3d(-100%, 0, 0);
-    font-size: 25px;
-    z-index: 900; }
+    font-size: 24px; }
   .menu-branding {
-    height: 35vh;
+    height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/mobil.jpg");
+      background: url("../img/portrait_small.jpg");
       width: 150px;
-      height: 150px;
-      margin-bottom: -70px;
-      position: relative;
-      z-index: 1000; }
-      .menu .nav-link {
-        font-size: 25px;
-      }
-      main#about {
-    grid-template-areas: 'heading' 'bioimage' 'bio' ;
+      height: 150px; }
+  main#about {
+    grid-template-areas: 'heading''bioimage' 'bio' ;
     grid-template-columns: 1fr; }
-    
-    main#about .bio-image {
+  main#about .bio-image {
       width: 150px;
       height: 150px;
-      margin: auto;
-      border-radius: 50%;
-      border: #eece1a 3px solid; }
+       }
 main#about  .bioimage h4 {
   margin-top: 0;
   margin-left: 0;
@@ -330,18 +312,15 @@ main#about  h1,
               font-size: 1.5rem; }
 main#about p {
                 margin: 0;
-                font-size: 1.2rem; }              
-             
+                font-size: 1.2rem; }
+
+
+
+
+
+
   .projects {
-    grid-template-columns: repeat(2, 1fr); }
-    .projecto {
-      grid-template-columns: repeat(2, 1fr);
-    } 
-    
-    .projecto .item {
-      border: none; 
-      border-bottom: #eece1a 2px solid;
-    }}
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -351,8 +330,5 @@ main#about p {
     main .lg-heading {
       margin-top: 1rem;
       font-size: 5rem; }
-  .projects {
-    grid-template-columns: 1fr; }
-  .projecto {
-    grid-template-columns: 1fr; } }
-    
+      .projects {
+        grid-template-columns: 1fr; } }
