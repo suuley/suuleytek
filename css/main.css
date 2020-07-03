@@ -314,6 +314,13 @@ main#about p {
                 margin: 0;
                 font-size: 1.2rem; }
 
+main#contact  h1,
+            h2,
+            h3 {
+              margin: 0;
+              font-weight: 400;
+              font-size: 1.5rem; }                
+
 
 
 
