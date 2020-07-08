@@ -180,13 +180,25 @@ main#about {
   main#about .bio-image {
     grid-area: bioimage;
     margin: auto;
-    border-radius: 50%;
-    border: #eece1a 3px solid; }
+    height: 240px;
+    width: 240px; }
   main#about .bio {
     grid-area: bio;
     font-size: 1.5rem; }
     main#about .heading {
     grid-area: heading; }
+  main#about .bioimage {
+    height: 250px;
+    width: 250px;
+    margin-top: 30px;
+  }
+  main#about .bioimg {
+    height: 250px;
+    width: 250px;
+    margin-top: 30px;
+  }
+ 
+   
   
    
 
