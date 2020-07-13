@@ -197,6 +197,13 @@ main#about {
     width: 250px;
     margin-top: 30px;
   }
+  main#about .bio h3 {
+    margin-bottom: 16px;
+    }
+ 
+  main#about .bio p {
+    text-align: left;
+  }
  
    
   
@@ -221,7 +228,7 @@ main#about {
         display: grid;
         /* Define Auto Row size */
         /*Define our columns */
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); 
         grid-gap: 3em; }
      .projecto .job {
       background: #515151;
