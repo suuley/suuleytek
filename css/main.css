@@ -235,17 +235,15 @@ main#about {
      .projecto .job {
        height: 250px;
      }   
-     .projecto .job-1 {
-      background-image: url("../g3352.png");
-      background-size: cover;
-      background-repeat: no-repeat ;     }
+     .projecto .job-1 img {
+               width: 100%;    
+               }
       .projecto .job-2 {
         background-color: #666 ;
         background-repeat: no-repeat ;     }
-        .projecto .job-3 {
-          background-image: url("../g4432.png");
-          background-size: cover;
-          background-repeat: no-repeat ;     }
+        .projecto .job-3 img {
+          width: 100%;    
+          }
           .projecto .job-4 {
             background-color: #666 ;
             background-repeat: no-repeat ;     } 
@@ -375,18 +373,7 @@ main#contact .boxes div {
   .projects {
     grid-template-columns: repeat(2, 1fr); }
     
-    .projecto .job-1 {
-      background: url("../htyar.png");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-          }
-          .projecto .job-3 {
-            background: url("../yar.png");
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-                  }}
+    }
 
    
              
@@ -402,7 +389,7 @@ main#contact .boxes div {
       font-size: 5rem; }
       .projects {
         grid-template-columns: 1fr; }
-      
+        
       }
 
 
