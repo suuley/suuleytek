@@ -230,10 +230,10 @@ main#about {
         display: grid;
         /* Define Auto Row size */
         /*Define our columns */
-        grid-template-columns: repeat(auto-fill, minmax(520px, 1fr)); 
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); 
         grid-gap: 3em; }
      .projecto .job {
-       height: 300px;
+       height: 250px;
      }   
      .projecto .job-1 {
       background-image: url("../g3352.png");
@@ -245,7 +245,6 @@ main#about {
         .projecto .job-3 {
           background-image: url("../g4432.png");
           background-size: cover;
-          background-position: left;
           background-repeat: no-repeat ;     }
           .projecto .job-4 {
             background-color: #666 ;
@@ -366,17 +365,32 @@ main#contact  h1,
               font-size: 1.6rem; }                
 main#contact .boxes div {
               font-weight: 400;
-              font-size: 1.3rem;}             
+              font-size: 1.3rem;}
+              
 
-.projecto .job {
-              height: 200px;
-              width: 80%;
-            }
+
 
 
 
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+    
+    .projecto .job-1 {
+      background: url("../htyar.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+          }
+          .projecto .job-3 {
+            background: url("../yar.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+                  }}
+
+   
+             
+  
 
 @media screen and (max-width: 500px) {
   main {
@@ -387,4 +401,8 @@ main#contact .boxes div {
       margin-top: 1rem;
       font-size: 5rem; }
       .projects {
-        grid-template-columns: 1fr; } }
+        grid-template-columns: 1fr; }
+      
+      }
+
+
