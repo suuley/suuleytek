@@ -389,7 +389,10 @@ main#contact .boxes div {
       font-size: 5rem; }
       .projects {
         grid-template-columns: 1fr; }
-        
+      
+        .projecto .job {
+          margin-right: 10px;
+        }
       }
 
 
