@@ -7,7 +7,14 @@
     "theme_color": "#f3ce21",
     "icons": [
       {
-        "src": "img/homescreen.png"
+        "src": "img/homescreen.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "img/geel.png",
+        "type": "image/png",
+        "sizes": "512x512"
       }
     ]
   }
