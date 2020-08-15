@@ -2,7 +2,7 @@
     "name": "SuuleTek",
     "short_name": "SuuleTek",
     "lang": "en-US",
-    "start_url": "/suuleytek",
+    "start_url": "/index.html",
     "display": "standalone",
     "theme_color": "#f3ce21",
     "background_color": "#2196f3",
